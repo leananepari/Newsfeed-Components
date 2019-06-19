@@ -55,6 +55,22 @@
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
+@keyframes slideIn {
+  from {
+    margin-left: -30%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slideOut {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -40%;
+  }
+}
 .menu ul li {
   list-style-type: none;
   font-size: 32px;
