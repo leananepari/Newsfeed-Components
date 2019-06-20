@@ -11,7 +11,8 @@
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
-
+  transition: height 1000ms ease;
+  
   h2 {
     font-size: 28px;
     padding: 0;
@@ -31,7 +32,7 @@
 
   .expandButton {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 50%;
     font-size: 12px;
     color: grey;
@@ -39,10 +40,24 @@
     transform: translate(-50%);
     background-color: white;
   }
+
+  .close-button {
+    position: absolute;
+    bottom: 3px;
+    left: 95%;
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+    transform: translate(-50%);
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 3px;
+  }
 }
 
 .article-open {
-  height: 400px;
+  height: 500px;
 }
 
 
