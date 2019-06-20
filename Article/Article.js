@@ -40,3 +40,32 @@ class Article {
 
 let articles = document.querySelectorAll('.article');
 articles.forEach( article => new Article(article) );
+
+
+// Build Article Function-----> NEEDS refactoring -draft-<-----------
+function buildArticle(title, date, paragraph) {
+  let h2 = document.createElement('h2');
+  let pDate = document.createElement('p');
+  let p = document.createElement('p');
+
+  let div = document.createElement('div');
+  div.className = 'article';
+
+  let h2Text = document.createTextNode(title);
+  h2.appendChild(h2Text);
+
+  let pDateText = document.createTextNode(date);
+  pDate.appendChild(pDateText);
+  pDate.className = 'date'
+
+  let pText = document.createTextNode(paragraph);
+  p.appendChild(pText);
+
+  div.appendChild(h2);
+  div.appendChild(pDate);
+  div.appendChild(p);
+
+  return document.querySelector('.articles').appendChild(div);
+}
+
+buildArticle("Title", "Todays Dat", "Hellofgkjdnsfjsbkfjbsdkjbfskjdbfkjsdbgkjsdbgkjsdbkjb")
