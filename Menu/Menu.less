@@ -5,7 +5,7 @@
 }
 
 .menu {
-  display: none;
+  // display: none;
   position: fixed;
   top: 75px;
   left: 0;
@@ -16,24 +16,9 @@
   border-left: none;
   border-bottom: none;
   z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
-}
+  margin: 0 0 0 -40%;
+  transition: margin 1000ms;
 
-@keyframes slideIn {
-  from {
-    margin-left: -30%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes slideOut {
-  from {
-    margin-left: 0%;
-  }
-  to {
-    margin-left: -40%;
-  }
 }
 
 .menu ul li{
@@ -44,5 +29,6 @@
 }
 
 .menu--open {
-  display: block;
+  // display: block;
+  margin: 0 0 0 0%;
 }
