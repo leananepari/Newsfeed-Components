@@ -68,4 +68,4 @@ function buildArticle(title, date, paragraph) {
   return document.querySelector('.articles').appendChild(div);
 }
 
-buildArticle("Title", "Todays Dat", "Hellofgkjdnsfjsbkfjbsdkjbfskjdbfkjsdbgkjsdbgkjsdbkjb")
+buildArticle("Title", "Todays Date", "Hellofgkjdnsfjsbkfjbsdkjbfskjdbfkjsdbgkjsdbgkjsdbkjb")
